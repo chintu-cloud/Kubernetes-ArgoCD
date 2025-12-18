@@ -1,34 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment-lb
+  name: my-deployment-lb
+  namespace: argocd   # 👈 Explicit namespace
 spec:
-  replicas: 8
-  selector:
-    matchLabels:
-      app: my-app-lb
-  template:
-    metadata:
-      labels:
-        app: my-app-lb
-    spec:
-      containers:
-        - name: hotstar-container
-          image: chandan87/hotstar:latest
-          ports:
-            - name: http
-              containerPort: 3000
+  replicas: 8
+  selector:
+    matchLabels:
+      app: my-app-lb
+  template:
+    metadata:
+      labels:
+        app: my-app-lb
+    spec:
+      containers:
+        - name: hotstar-container
+          image: chandan87/hotstar:latest
+          ports:
+            - name: http
+              containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app-lb
+  name: my-app-lb
+  namespace: argocd   # 👈 Explicit namespace
 spec:
-  type: LoadBalancer
-  selector:
-    app: my-app-lb
-  ports:
-    - name: http
-      protocol: TCP
-      port: 80       
-      targetPort: 3000
+  type: LoadBalancer
+  selector:
+    app: my-app-lb
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 3000
