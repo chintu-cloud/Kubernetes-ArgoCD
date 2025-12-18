@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/CloudTechDevOps/Kubernetes.git
+    repoURL: https://github.com/chintu-cloud/Kubernetes-ArgoCD.git
     targetRevision: HEAD
-    path: day-14-argocd
+    path: ArgoCD-project
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
