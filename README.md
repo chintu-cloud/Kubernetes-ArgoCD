@@ -414,7 +414,7 @@ Sync Policy: Automatic
 ```text
 Repo URL: https://github.com/chintu-cloud/Kubernetes-ArgoCD.git
 Revision: HEAD
-Path: hotsatr
+Path: Hotsatr
 ```
 
 ### 🔹 Destination
