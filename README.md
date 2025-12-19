@@ -8,7 +8,7 @@ Below is a **stylish, clean, professional `README.md`** with icons, sections, co
 You can **directly paste this into GitHub** — nothing is missing.
 
 ---
-## 🖥️ lunch EC2 - 
+## 🖥️ Lunch EC2 - 
 ```
      name : client
      instance type : t3.micro
@@ -16,7 +16,7 @@ You can **directly paste this into GitHub** — nothing is missing.
      security group : default 
 ```     
 ---
-## 🚀 connect EC2 -
+## 🚀 Connect EC2 -
 ```
     Attach IAM role -
         name : EC2-ECR
