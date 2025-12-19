@@ -10,12 +10,12 @@ You can **directly paste this into GitHub** — nothing is missing.
 ---
 ## 🖥️ Lunch EC2 - 
 
-manully create & run the nodes in the server
+manully create & and run the application
 ```
      name : client
      instance type : t3.micro
      networking : default
-     security group : default 
+     security group : EKS created SG (give)
 ```     
 ---
 ## 🚀 Connect EC2 -
