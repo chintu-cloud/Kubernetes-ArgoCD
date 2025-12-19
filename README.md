@@ -395,6 +395,7 @@ nginx-deploy-3   Running
 
 ✅ Pod recreated automatically by ArgoCD.
 ---
+
 ## 🆕 Step 16: Create Application in ArgoCD
 
 Click **➕ New App**
