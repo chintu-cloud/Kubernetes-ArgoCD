@@ -22,7 +22,7 @@ You can **directly paste this into GitHub** — nothing is missing.
         name : EC2-ECR
         policy : Adminstration access 
 ```       
-
+---
 ## 📌 Architecture Overview
 
 ```
@@ -392,6 +392,35 @@ nginx-deploy-3   Running
 ```
 
 ✅ Pod recreated automatically by ArgoCD.
+---
+## 🆕 Step 16: Create Application in ArgoCD
+
+Click **➕ New App**
+
+### 🔹 General
+
+```text
+App Name: chandan
+Project: default
+Sync Policy: Automatic
+```
+
+
+### 🔹 Source
+
+```text
+Repo URL: https://github.com/chintu-cloud/Kubernetes-ArgoCD.git
+Revision: HEAD
+Path: hotsatr
+```
+
+### 🔹 Destination
+
+```text
+Cluster: https://kubernetes.default.svc
+Namespace: cloud
+```
+<img width="1521" height="804" alt="image" src="https://github.com/user-attachments/assets/545b81fe-1a8b-4818-9461-bb2dd4f8d2e7" />
 
 ---
 ## 🏁 Total Applications
